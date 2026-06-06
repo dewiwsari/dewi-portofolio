@@ -23,6 +23,8 @@ import mulmed from "../../assets/organizations/mulmed.jpg";
 import pkl from "../../assets/works/pkl.png";
 import mct1 from "../../assets/works/mct1.jpeg";
 import mct2 from "../../assets/works/mct2.jpeg";
+import assist from "../../assets/works/assist.png";
+import assist1 from "../../assets/works/assist1.jpg";
 import myskill from "../../assets/certificates/MySkill.png";
 
 
@@ -164,9 +166,9 @@ const WORK: CardItem[] = [
     period: "Aug – Dec 2024",
     tags: ["Education", "Leadership", "Communication","Teaching", "Data Management"],
     images: [
-      "https://images.unsplash.com/photo-1580894908361-967195033215?w=640&h=400&fit=crop&auto=format",
+      assist, assist1,
     ],
-    links: { view: "#" },
+    links: { view: "https://www.instagram.com/asistensi.pai.sv.ipb" },
     overview: "Assisted professors in delivering Islamic Education courses, managing academic data, and coordinating class logistics for 60+ undergraduate students.",
     responsibilities: [
       "Lectured, explained course materials, and facilitated group discussions based on the teaching assistant team's guidelines.",
