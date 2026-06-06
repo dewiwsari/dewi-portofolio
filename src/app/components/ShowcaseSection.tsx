@@ -10,6 +10,13 @@ import secompImg from "../../assets/competitions/secomp.jpg";
 import hmpeImg from "../../assets/competitions/hmpe-uny.png";
 import smartItImg from "../../assets/competitions/smart-it.png";
 import PublicationsBT from "../../assets/publications/publication-bt.png";
+import brieff from "../../assets/organizations/brieff.png";
+import gmd1 from "../../assets/organizations/gmd1.png";
+import gmd2 from "../../assets/organizations/gmd2.png";
+import pkl from "../../assets/works/pkl.png";
+import kominfo from "../../assets/organizations/kominfo.png";
+import igtpl from "../../assets/organizations/ig-tpl.png";
+import mte from "../../assets/organizations/mte.jpg";
 
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -193,15 +200,15 @@ const ORGS: CardItem[] = [
     role: "Division Secretary — Multimedia",
     period: "2024–2025",
     tags: ["Administration", "Project Management", "Multimedia", "Communication"],
-    images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&h=400&fit=crop&auto=format",
-    ],
+    images: [mte,],
     links: { view: "#" },
-    overview: "Managed divisional administration and internal project timelines for the Multimedia division within IPB's premier tech student organization.",
+    overview: "Served as Division Secretary of the Multimedia Division while actively contributing to Micro Technology Education, one of the organization's flagship programs. Managed administrative operations, coordinated cross-divisional activities, and supported event execution to ensure successful educational and technology-focused initiatives.",
     responsibilities: [
       "Handled comprehensive divisional administration, including document archiving and maintaining attendance records for work programs, workshops, and meetings.",
       "Coordinated actively with bureau coordinators and other divisions to streamline internal communication and collaboration.",
       "Monitored, tracked, and managed internal project timelines to ensure all multimedia events and programs executed according to schedule.",
+      "Contributed as an Event Division Member for Micro Technology Education, assisting in event planning, participant coordination, activity execution, and on-site event management.",
+      "Supported the organization of technology education programs aimed at enhancing students' technical knowledge and practical skills through workshops and learning activities.",
     ],
   },
   {
@@ -210,10 +217,8 @@ const ORGS: CardItem[] = [
     subtitle: "Community Education & Operations Volunteer",
     period: "2022–2024",
     tags: ["Education", "Business Development", "Content Management", "Social Impact"],
-    images: [
-      "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=640&h=400&fit=crop&auto=format",
-    ],
-    links: { view: "#" },
+    images: [gmd1, gmd2,],
+    links: { view: "instagram.com/mengajardesa.depok" },
     overview: "Contributed across multi-functional teams in a national educational initiative, driving fundraising efforts, producing community content, and delivering academic programs to rural elementary students.",
     responsibilities: [
       "Drove fundraising initiatives within the Business Development division through strategic merchandise/product sales to secure event funding.",
@@ -231,9 +236,9 @@ const ORGS: CardItem[] = [
     period: "2025",
     tags: ["Graphic Design", "Content Creation", "Social Media", "TPL"],
     images: [
-      "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=640&h=400&fit=crop&auto=format",
+      kominfo, igtpl,
     ],
-    links: { view: "#" },
+    links: { view: "https://www.instagram.com/tpl.svipb" },
     overview: "Designed and managed creative digital content for the Software Engineering Technology (TPL) student community Instagram platform to boost engagement and share cohort updates.",
     responsibilities: [
       "Designed visually engaging feed and story content for the official TRPL cohort Instagram account.",
@@ -601,7 +606,7 @@ function ShowcaseCard({ item, tabKey, onClick }: { item: CardItem; tabKey: TabKe
             <LinkChip icon={<Building2 size={12} />} label="View Experience" href={item.links.view} />
           )}
           {tabKey === "organizations" && item.links?.view && (
-            <LinkChip icon={<Users size={12} />} label="View Docs" href={item.links.view} />
+            <LinkChip icon={<Users size={12} />} label="View Organization" href={item.links.view} />
           )}
           {tabKey === "competitions" && (
             <>
