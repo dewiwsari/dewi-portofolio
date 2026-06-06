@@ -5,6 +5,10 @@ import {
   X, Trophy, FileText, Award, Briefcase, Users, Code2,
   ChevronDown, Building2,
 } from "lucide-react";
+import sitefestImg from "../../assets/competitions/sitefest.png";
+import secompImg from "../../assets/competitions/secomp.jpg";
+import hmpeImg from "../../assets/competitions/hmpe-uny.png";
+import smartItImg from "../../assets/competitions/smart-it.png";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -242,16 +246,17 @@ const COMPETITIONS: CardItem[] = [
   {
     id: "sitefest",
     title: "SITEFEST 4.0",
-    subtitle: "National IT Competition",
+    subtitle: "National UI/UX Design Competition",
     achievement: "Top 10 Finalist",
     period: "2024",
-    tags: ["National", "Innovation"],
-    images: [
-      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=640&h=400&fit=crop&auto=format",
+    tags: ["National", "UI/UX Design", "Team Leader"],
+    images: [sitefestImg,],
+    overview: "Led a multidisciplinary team in the National UI/UX Design Competition at SITEFEST 4.0 organized by BEM Primakara University. Guided the project from ideation to presentation, earning a Top 10 Finalist position nationwide.",
+    achievements: [
+      "Top 10 Finalist nationwide",
+      "Competed against teams from various universities in Indonesia",
+      "Presented UI/UX design solutions for real-world problems",
     ],
-    links: { view: "#", cert: "#" },
-    overview: "Achieved Top 10 at a prestigious national IT competition, presenting an innovative tech solution to a panel of industry judges.",
-    achievements: ["Top 10 / 50+ teams nationwide", "Presented to industry judges panel"],
   },
   {
     id: "secomp",
@@ -259,27 +264,50 @@ const COMPETITIONS: CardItem[] = [
     subtitle: "Software Engineering Competition",
     achievement: "Top 5 Finalist",
     period: "2025",
-    tags: ["Regional", "Software Eng"],
+    tags: ["National", "UI/UX Design", "Team Leader"],
     images: [
-      "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?w=640&h=400&fit=crop&auto=format",
+      secompImg,
     ],
-    links: { view: "#", cert: "#" },
-    overview: "Secured Top 5 at SECOMP 2025, demonstrating excellence in software design and implementation under competition constraints.",
-    achievements: ["Top 5 / 150+ teams", "Best Technical Documentation award"],
+    overview: "Served as Team Leader in the UI/UX Design category of SECOMP 2025 organized by Telkom University. Directed design decisions, coordinated team members, and represented the team during competition activities, achieving a Top 5 Finalist position at the national level.",
+    achievements: [
+      "National-level finalist",
+      "Designed user-centered interface solutions",
+      "Competed with participants from universities across Indonesia",
+    ],
   },
   {
     id: "hmpe-uny",
-    title: "HMPE UNY Business Plan",
-    subtitle: "Tech Business Plan Competition",
-    achievement: "Finalist",
-    period: "2024",
-    tags: ["Business Plan", "AgriTech"],
+    title: "Business Plan Competition 2025",
+    subtitle: "HMPE FEB Universitas Negeri Yogyakarta",
+    achievement: "Participant",
+    period: "2025",
+    tags: ["Business Plan", "Entrepreneurship", "Team Leader"],
     images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&h=400&fit=crop&auto=format",
+      hmpeImg,
     ],
-    links: { view: "#" },
-    overview: "Developed and pitched a technology-driven business plan for a sustainable agritech solution at Yogyakarta State University's annual competition.",
-    achievements: ["Finalist — strong industry practitioner feedback"],
+    overview: "Participated in the National Seminar and Business Plan Competition 2025 organized by the Student Association of Economics Education, Faculty of Economics and Business, Universitas Negeri Yogyakarta.",
+    achievements: [
+      "National competition participant",
+      "Developed and presented a business plan proposal",
+      "Explored sustainable business and digital technology synergy concepts",
+    ],
+  },
+  {
+    id: "smart-it",
+    title: "Smart IT Competition 2025",
+    subtitle: "UI/UX Design Competition",
+    achievement: "Participant",
+    period: "2025",
+    tags: ["National", "UI/UX Design", "Team Leader"],
+    images: [
+      smartItImg,
+    ],
+    overview: "Participated in the UI/UX Design Competition category at Smart IT Competition 2025 as part of Team DNS Server, organized by the D3 Informatics Engineering Program of Universitas Sebelas Maret.",
+    achievements: [
+      "Represented Team DNS Server",
+      "Designed user experience and interface solutions",
+      "Participated in a national technology competition",
+    ],
   },
 ];
 
@@ -413,7 +441,7 @@ function ShowcaseCard({ item, tabKey, onClick }: { item: CardItem; tabKey: TabKe
         onMouseEnter={() => { setHovered(true); startSlide(); }}
         onMouseLeave={() => { setHovered(false); stopSlide(); }}
       >
-        <AnimatePresence mode="crossfade">
+        <AnimatePresence mode="wait">
           <motion.img
             key={item.images[imgIdx]}
             src={item.images[imgIdx]}
@@ -652,7 +680,7 @@ function ItemModal({ item, onClose }: { item: CardItem; onClose: () => void }) {
       >
         {/* Gallery */}
         <div className="relative h-56 sm:h-64 bg-[#F1F5F9] shrink-0 sm:rounded-t-3xl rounded-t-3xl overflow-hidden">
-          <AnimatePresence mode="crossfade">
+          <AnimatePresence mode="wait">
             <motion.img
               key={item.images[imgIdx]}
               src={item.images[imgIdx]}
