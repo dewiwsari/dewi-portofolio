@@ -14,9 +14,12 @@ import brieff from "../../assets/organizations/brieff.png";
 import gmd1 from "../../assets/organizations/gmd1.png";
 import gmd2 from "../../assets/organizations/gmd2.png";
 import pkl from "../../assets/works/pkl.png";
+import mct1 from "../../assets/works/mct1.jpeg";
+import mct2 from "../../assets/works/mct2.jpeg";
 import kominfo from "../../assets/organizations/kominfo.png";
 import igtpl from "../../assets/organizations/ig-tpl.png";
 import mte from "../../assets/organizations/mte.jpg";
+import myskill from "../../assets/certificates/MySkill.png";
 
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -130,12 +133,10 @@ const WORK: CardItem[] = [
     id: "icon-plus",
     title: "Internship at PT Indonesia Comnets Plus",
     subtitle: "Technical Administrative Assistant",
-    period: "2022",
+    period: "Jan-Jun 2022",
     tags: ["NOC", "Excel", ],
-    images: [
-      "https://images.unsplash.com/photo-1623479322729-28b25c16b011?w=640&h=400&fit=crop&auto=format",
-    ],
-    links: { view: "#" },
+    images: [pkl,],
+    links: { view: "https://drive.google.com/drive/folders/1G8UXjfH_lNOpDZs2SEpINoUVcfhmCBrr" },
     overview: "Managed and monitored core infrastructure data, including POP environmental metrics and retail service tickets, ensuring operational stability and accurate reporting for regional network operations.",
     responsibilities: [
       "Monitored & managed POP environmental data (temperature & humidity) to ensure infrastructure stability and prevent hardware downtime.",
@@ -178,8 +179,8 @@ const WORK: CardItem[] = [
     period: "Feb 2026 – Present",
     tags: ["Robotics", "STEM", "Teaching", "Education", "Communication"],
     images: [
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=640&h=400&fit=crop&auto=format",
-    ],
+      mct1,
+      mct2,    ],
     links: { view: "#" },
     overview: "Instructing elementary school students in fundamental robotics concepts using Bricks, TMS, and SPM, while managing classroom administrative and evaluation tasks.",
     responsibilities: [
@@ -275,6 +276,7 @@ const COMPETITIONS: CardItem[] = [
     images: [
       secompImg,
     ],
+    links: { view: "https://drive.google.com/file/d/19bWpyhHDKZIbuZm2M9qHDc1aoOMVElcm/view?usp=drive_link" },
     overview: "Served as Team Leader in the UI/UX Design category of SECOMP 2025 organized by Telkom University. Directed design decisions, coordinated team members, and represented the team during competition activities, achieving a Top 5 Finalist position at the national level.",
     achievements: [
       "National-level finalist",
@@ -370,52 +372,16 @@ const PUBLICATIONS: CardItem[] = [
 
 const CERTIFICATES: CardItem[] = [
   {
-    id: "cert-android",
+    id: "figma",
     title: "Associate Android Developer",
     subtitle: "Google Developers Certification",
     period: "2024",
     tags: ["Android", "Google", "Kotlin"],
     images: [
-      "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?w=640&h=400&fit=crop&auto=format",
+      myskill,
     ],
-    links: { view: "#" },
+    links: { view: "https://app.notion.com/p/Dewi-Wulansari-J0403231024-13b64c0f2a2380bcb22dde1bdc9495fa?source=copy_link" },
     overview: "Official Google certification validating proficiency in Android development with Kotlin.",
-  },
-  {
-    id: "cert-flutter",
-    title: "Flutter Developer Expert",
-    subtitle: "Dicoding Indonesia",
-    period: "2024",
-    tags: ["Flutter", "Dart", "Mobile"],
-    images: [
-      "https://images.unsplash.com/photo-1628277613967-6abca504d0ac?w=640&h=400&fit=crop&auto=format",
-    ],
-    links: { view: "#" },
-    overview: "Expert-level Flutter certification covering advanced architecture, performance optimization, and deployment.",
-  },
-  {
-    id: "cert-aws",
-    title: "AWS Cloud Practitioner",
-    subtitle: "Amazon Web Services",
-    period: "2025",
-    tags: ["AWS", "Cloud", "DevOps"],
-    images: [
-      "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=640&h=400&fit=crop&auto=format",
-    ],
-    links: { view: "#" },
-    overview: "Foundational AWS certification covering cloud concepts, services, security, and architecture.",
-  },
-  {
-    id: "cert-ibm-ds",
-    title: "IBM Data Science Professional",
-    subtitle: "Coursera / IBM",
-    period: "2024",
-    tags: ["Data Science", "Python", "ML"],
-    images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&h=400&fit=crop&auto=format",
-    ],
-    links: { view: "#" },
-    overview: "Professional certificate covering Python, SQL, data visualization, and machine learning fundamentals.",
   },
 ];
 
@@ -603,14 +569,14 @@ function ShowcaseCard({ item, tabKey, onClick }: { item: CardItem; tabKey: TabKe
             </>
           )}
           {(tabKey === "work") && item.links?.view && (
-            <LinkChip icon={<Building2 size={12} />} label="View Experience" href={item.links.view} />
+            <LinkChip icon={<Building2 size={12} />} label="View Work" href={item.links.view} />
           )}
           {tabKey === "organizations" && item.links?.view && (
             <LinkChip icon={<Users size={12} />} label="View Organization" href={item.links.view} />
           )}
           {tabKey === "competitions" && (
             <>
-              {item.links?.view && <LinkChip icon={<ExternalLink size={12} />} label="View Design" href={item.links.view} />}
+              {item.links?.view && <LinkChip icon={<ExternalLink size={12} />} label="View Documentation" href={item.links.view} />}
               {item.links?.cert && <LinkChip icon={<Award size={12} />} label="Certificate" href={item.links.cert} />}
             </>
           )}
