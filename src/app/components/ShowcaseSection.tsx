@@ -206,7 +206,7 @@ const ORGS: CardItem[] = [
     period: "2024–2025",
     tags: ["Administration", "Project Management", "Multimedia", "Communication"],
     images: [mulmed, kabinet, mte,],
-    links: { view: "#" },
+    links: { view: "https://www.instagram.com/micro_ipb" },
     overview: "Served as Division Secretary of the Multimedia Division while actively contributing to Micro Technology Education, one of the organization's flagship programs. Managed administrative operations, coordinated cross-divisional activities, and supported event execution to ensure successful educational and technology-focused initiatives.",
     responsibilities: [
       "Handled comprehensive divisional administration, including document archiving and maintaining attendance records for work programs, workshops, and meetings.",
@@ -223,7 +223,7 @@ const ORGS: CardItem[] = [
     period: "2022–2024",
     tags: ["Education", "Business Development", "Content Management", "Social Impact"],
     images: [gmd1, gmd, gmd2,],
-    links: { view: "instagram.com/mengajardesa.depok" },
+    links: { view: "https://www.instagram.com/mengajardesa.depok" },
     overview: "Contributed across multi-functional teams in a national educational initiative, driving fundraising efforts, producing community content, and delivering academic programs to rural elementary students.",
     responsibilities: [
       "Drove fundraising initiatives within the Business Development division through strategic merchandise/product sales to secure event funding.",
