@@ -24,7 +24,7 @@ export function Navbar() {
       <header
         className="fixed top-0 inset-x-0 z-50 transition-all duration-300"
         style={{
-          background: scrolled ? "rgba(248,250,252,0.88)" : "transparent",
+          background: scrolled ? "rgba(248,250,252,0.6)" : "transparent",
           backdropFilter: scrolled ? "blur(24px)" : "none",
           WebkitBackdropFilter: scrolled ? "blur(24px)" : "none",
           borderBottom: scrolled ? "1px solid rgba(15,23,42,0.07)" : "1px solid transparent",
@@ -43,7 +43,7 @@ export function Navbar() {
               className="hidden sm:block text-[#0F172A] font-semibold text-sm tracking-tight"
               style={{ fontFamily: "'Plus Jakarta Sans',sans-serif" }}
             >
-              Dewi Wulansari
+              Dewi's Portofolio
             </span>
           </a>
 

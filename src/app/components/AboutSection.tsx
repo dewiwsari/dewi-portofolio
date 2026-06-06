@@ -46,19 +46,21 @@ export function AboutSection() {
               About Me
             </span>
             <h2 className="text-4xl lg:text-[48px] text-[#0F172A] mb-6 tracking-tight">
-              Building the future,{" "}
-              <span style={{ color: "#E96D9E" }}>one commit</span> at a time.
+              Learning, coding, and{" "}
+              <span style={{ color: "#E96D9E" }}>building projects </span>one step at a time.
             </h2>
 
             <p className="text-[#475569] leading-relaxed mb-5 text-[16px]" style={{ fontFamily: "'Inter',sans-serif" }}>
-              I'm <span className="font-semibold text-[#0F172A]">Dewi Wulansari</span> — a passionate
-              Software Engineering Technology student at IPB University with a product-first mindset.
-              I bridge the gap between clean code and meaningful user experiences.
+              I'm <span className="font-semibold text-[#0F172A]">Dewi Wulansari</span> — a
+              Software Engineering Technology student at IPB University.
+              I enjoy building software solutions and exploring how technology 
+              can solve everyday problems, both through code and community impact. 
             </p>
             <p className="text-[#475569] leading-relaxed mb-8 text-[16px]" style={{ fontFamily: "'Inter',sans-serif" }}>
-              Whether crafting a polished Flutter app, wiring a robust Spring Boot API, or extracting
-              insights from messy datasets with Python — I approach every challenge with curiosity,
-              rigor, and a bias for shipping.
+              My current tech stack includes Flutter and Native Java for mobile 
+              development, Laravel for web apps, and Figma for UI/UX design. 
+              I'm always open to exploring new tools and ready to learn as much as 
+              I can along the way.
             </p>
 
             {/* Meta info */}

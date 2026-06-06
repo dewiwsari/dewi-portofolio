@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { Github, Download, ArrowRight, Sparkles, Mail } from "lucide-react";
 
@@ -104,7 +103,7 @@ export function HeroSection() {
               className="text-base font-medium text-[#64748B] mb-3 tracking-wide"
               style={{ fontFamily: "'JetBrains Mono',monospace" }}
             >
-              Software Engineering Undergaduate Student
+              Software Engineering Undergraduate Student
             </motion.p>
 
             <motion.p
@@ -115,9 +114,10 @@ export function HeroSection() {
               style={{ fontFamily: "'Inter',sans-serif" }}
             >
               Software Engineering Technology student at{" "}
-              <span className="font-semibold text-[#0F172A]">IPB University</span>, building impactful
-              digital experiences across mobile, web, and data. Turning complex problems into
-              elegant, production-ready solutions.
+              <span className="font-semibold text-[#0F172A]">IPB University</span>, 
+              building digital experiences across mobile, web, and data. A 6th-semester 
+              student dedicated to strengthening my technical 
+              foundations through hands-on learning.
             </motion.p>
 
             <motion.div
@@ -219,7 +219,7 @@ export function HeroSection() {
                 style={{ aspectRatio: "4/5", boxShadow: "0 24px 80px rgba(15,23,42,0.14),0 4px 12px rgba(15,23,42,0.08)" }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=750&fit=crop&crop=faces&auto=format"
+                  src="/src/assets/profile/foto.png"
                   alt="Dewi Wulansari"
                   className="w-full h-full object-cover"
                 />
