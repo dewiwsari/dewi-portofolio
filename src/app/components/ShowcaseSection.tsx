@@ -10,15 +10,19 @@ import secompImg from "../../assets/competitions/secomp.jpg";
 import hmpeImg from "../../assets/competitions/hmpe-uny.png";
 import smartItImg from "../../assets/competitions/smart-it.png";
 import PublicationsBT from "../../assets/publications/publication-bt.png";
+import loa from "../../assets/publications/loa-bt.png";
 import brieff from "../../assets/organizations/brieff.png";
+import gmd from "../../assets/organizations/gmd.jpg";
 import gmd1 from "../../assets/organizations/gmd1.png";
 import gmd2 from "../../assets/organizations/gmd2.png";
+import kominfo from "../../assets/organizations/kominfo.png";
+import sikrab from "../../assets/organizations/sikrab.jpg";
+import mte from "../../assets/organizations/mte.jpg";
+import kabinet from "../../assets/organizations/kabinet.jpg";
+import mulmed from "../../assets/organizations/mulmed.jpg";
 import pkl from "../../assets/works/pkl.png";
 import mct1 from "../../assets/works/mct1.jpeg";
 import mct2 from "../../assets/works/mct2.jpeg";
-import kominfo from "../../assets/organizations/kominfo.png";
-import igtpl from "../../assets/organizations/ig-tpl.png";
-import mte from "../../assets/organizations/mte.jpg";
 import myskill from "../../assets/certificates/MySkill.png";
 
 
@@ -174,7 +178,7 @@ const WORK: CardItem[] = [
   },
   {
     id: "coding-instructor",
-    title: "Robotics Instructor",
+    title: "Part-Time Robotics Instructor",
     subtitle: "Mechatron Robotic School",
     period: "Feb 2026 – Present",
     tags: ["Robotics", "STEM", "Teaching", "Education", "Communication"],
@@ -201,7 +205,7 @@ const ORGS: CardItem[] = [
     role: "Division Secretary — Multimedia",
     period: "2024–2025",
     tags: ["Administration", "Project Management", "Multimedia", "Communication"],
-    images: [mte,],
+    images: [mulmed, kabinet, mte,],
     links: { view: "#" },
     overview: "Served as Division Secretary of the Multimedia Division while actively contributing to Micro Technology Education, one of the organization's flagship programs. Managed administrative operations, coordinated cross-divisional activities, and supported event execution to ensure successful educational and technology-focused initiatives.",
     responsibilities: [
@@ -218,7 +222,7 @@ const ORGS: CardItem[] = [
     subtitle: "Community Education & Operations Volunteer",
     period: "2022–2024",
     tags: ["Education", "Business Development", "Content Management", "Social Impact"],
-    images: [gmd1, gmd2,],
+    images: [gmd1, gmd, gmd2,],
     links: { view: "instagram.com/mengajardesa.depok" },
     overview: "Contributed across multi-functional teams in a national educational initiative, driving fundraising efforts, producing community content, and delivering academic programs to rural elementary students.",
     responsibilities: [
@@ -237,7 +241,7 @@ const ORGS: CardItem[] = [
     period: "2025",
     tags: ["Graphic Design", "Content Creation", "Social Media", "TPL"],
     images: [
-      kominfo, igtpl,
+      kominfo, sikrab,
     ],
     links: { view: "https://www.instagram.com/tpl.svipb" },
     overview: "Designed and managed creative digital content for the Software Engineering Technology (TPL) student community Instagram platform to boost engagement and share cohort updates.",
@@ -332,7 +336,7 @@ const PUBLICATIONS: CardItem[] = [
       "Software Quality Assurance", 
       "Technical Paper"
     ],
-    images: [PublicationsBT,],
+    images: [PublicationsBT, loa,],
     links: { view: "https://ejournal.itn.ac.id/jati/article/view/16836" },
     overview: "Authored and published a research paper examining the application of Decision Table-based Black Box Testing on the FishCo website. The study involved designing structured test scenarios, validating functional requirements, and analyzing testing outcomes to improve software reliability, functionality, and quality assurance practices.",
   },
@@ -348,7 +352,7 @@ const PUBLICATIONS: CardItem[] = [
       "Recommendation System",
       "Research Paper",
     ],
-    images: [PublicationsBT,],
+    images: [],
     links: { view: "#" },
     overview: "Co-authored a research paper proposing an intelligent cooking recommendation system that combines YOLO-based multi-object food ingredient detection with Generative AI. The study focuses on identifying available ingredients through computer vision and generating personalized recipe recommendations to support efficient meal preparation and reduce food waste.",
   },
@@ -364,7 +368,7 @@ const PUBLICATIONS: CardItem[] = [
       "Software Engineering",
       "Research Paper",
     ],
-    images: [PublicationsBT,],
+    images: [],
     links: { view: "#" },
     overview: "Co-authored a research paper on the development of a web-based extracurricular content management information system using the Waterfall software development methodology. The research covers requirements analysis, system design, implementation, testing, and maintenance processes to improve content organization, publication efficiency, and communication within extracurricular activities.",
   },

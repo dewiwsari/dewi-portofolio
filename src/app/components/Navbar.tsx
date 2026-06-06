@@ -63,7 +63,7 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center gap-2.5">
             <a
-              href="#"
+              href="https://drive.google.com/uc?export=download&id=1hc1IY8YQyrFJFReONDGVjuacCxAYn_7V"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border border-[#E2E8F0] text-[#0F172A] text-sm font-medium hover:border-[#E96D9E]/40 hover:bg-[#E96D9E]/5 transition-all duration-150"
               style={{ fontFamily: "'Inter',sans-serif" }}
             >

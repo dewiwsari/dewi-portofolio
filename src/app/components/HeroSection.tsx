@@ -1,11 +1,12 @@
 import { motion } from "motion/react";
 import { Github, Download, ArrowRight, Sparkles, Mail } from "lucide-react";
+import { Eye } from "lucide-react";
 
 
 const STATS = [
-  { value: "15+", label: "Projects Built" },
-  { value: "3+", label: "Work Experiences" },
-  { value: "6+", label: "Awards & Recognitions" },
+  { value: "10+", label: "Projects Built" },
+  { value: "3", label: "Work Experiences" },
+  { value: "5+", label: "Awards & Recognitions" },
 ];
 
 function FloatingBadge({ label, bg, color, style }: { label: string; bg: string; color: string; style?: React.CSSProperties }) {
@@ -140,12 +141,14 @@ export function HeroSection() {
                 <ArrowRight size={14} />
               </a>
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1hc1IY8YQyrFJFReONDGVjuacCxAYn_7V/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white border border-[#E2E8F0] text-[#0F172A] text-sm font-semibold hover:border-[#E96D9E]/40 hover:bg-[#E96D9E]/5 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150"
                 style={{ fontFamily: "'Inter',sans-serif", boxShadow: "0 1px 4px rgba(15,23,42,0.06)" }}
               >
-                <Download size={15} />
-                Download CV
+                <Eye size={18} />
+                Open CV
               </a>
               <a
                 href="https://github.com/dewiwsari"
@@ -252,7 +255,7 @@ export function HeroSection() {
                   className="text-2xl text-[#0F172A] leading-none"
                   style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800 }}
                 >
-                  15+
+                  10+
                 </p>
                 <p className="text-[10px] text-[#94A3B8] mt-0.5" style={{ fontFamily: "'Inter',sans-serif" }}>
                   Projects
@@ -269,7 +272,7 @@ export function HeroSection() {
                   className="text-2xl leading-none"
                   style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, color: "#E96D9E" }}
                 >
-                  6+
+                  5+
                 </p>
                 <p className="text-[10px] text-[#94A3B8] mt-0.5" style={{ fontFamily: "'Inter',sans-serif" }}>
                   Awards
