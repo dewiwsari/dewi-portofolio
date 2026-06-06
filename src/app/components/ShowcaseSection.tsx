@@ -9,6 +9,8 @@ import sitefestImg from "../../assets/competitions/sitefest.png";
 import secompImg from "../../assets/competitions/secomp.jpg";
 import hmpeImg from "../../assets/competitions/hmpe-uny.png";
 import smartItImg from "../../assets/competitions/smart-it.png";
+import PublicationsBT from "../../assets/publications/publication-bt.png";
+
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -313,28 +315,51 @@ const COMPETITIONS: CardItem[] = [
 
 const PUBLICATIONS: CardItem[] = [
   {
-    id: "pub-poultrease",
-    title: "Poultrease: Mobile-Based Poultry Farm Management Using Flutter",
-    subtitle: "Journal of Agricultural Technology & Informatics",
-    period: "2024",
-    tags: ["Flutter", "AgriTech", "Mobile"],
-    images: [
-      "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=640&h=400&fit=crop&auto=format",
+    id: "fishco",
+    title: "ANALISIS PENERAPAN BLACK BOX TESTING BERBASIS DECISION TABLE TERHADAP FUNGSIONALITAS WEBSITE FISHCO",
+    subtitle: "JATI (Jurnal Mahasiswa Teknik Informatika)",
+    period: "Published 2026",
+    tags: [
+      "Black Box Testing", 
+      "Software Testing", 
+      "Software Quality Assurance", 
+      "Technical Paper"
     ],
-    links: { view: "#" },
-    overview: "Published research describing the architecture, implementation, and evaluation of the Poultrease mobile app for poultry farm management.",
+    images: [PublicationsBT,],
+    links: { view: "https://ejournal.itn.ac.id/jati/article/view/16836" },
+    overview: "Authored and published a research paper examining the application of Decision Table-based Black Box Testing on the FishCo website. The study involved designing structured test scenarios, validating functional requirements, and analyzing testing outcomes to improve software reliability, functionality, and quality assurance practices.",
   },
   {
-    id: "pub-ai",
-    title: "Hybrid Recommendation System for Personalized Nutrition",
-    subtitle: "National Seminar on Computer Science 2026",
-    period: "2026",
-    tags: ["Machine Learning", "Nutrition", "RecSys"],
-    images: [
-      "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?w=640&h=400&fit=crop&auto=format",
+    id: "viskom",
+    title: "Sistem Rekomendasi Masakan Berbasis Deteksi Multiobjek Bahan Makanan Menggunakan YOLO dan Generative AI",
+    subtitle: "Techne Jurnal Ilmiah Elektroteknika",
+    period: "Reviewing Process",
+    tags: [  
+      "Computer Vision",
+      "YOLO",
+      "Generative AI",
+      "Recommendation System",
+      "Research Paper",
     ],
+    images: [PublicationsBT,],
     links: { view: "#" },
-    overview: "Research presenting a hybrid ML approach (collaborative + content-based filtering) for personalized food recommendation on mobile.",
+    overview: "Co-authored a research paper proposing an intelligent cooking recommendation system that combines YOLO-based multi-object food ingredient detection with Generative AI. The study focuses on identifying available ingredients through computer vision and generating personalized recipe recommendations to support efficient meal preparation and reduce food waste.",
+  },
+  {
+    id: "pppl",
+    title: "PENGEMBANGAN SISTEM INFORMASI MANAJEMEN KONTEN EKSTRAKURIKULER MENGGUNAKAN METODE WATERFALL",
+    subtitle: "Jurnal Inter Tech",
+    period: "Reviewing Process",
+    tags: [
+      "Web Development",
+      "Information System",
+      "Waterfall Method",
+      "Software Engineering",
+      "Research Paper",
+    ],
+    images: [PublicationsBT,],
+    links: { view: "#" },
+    overview: "Co-authored a research paper on the development of a web-based extracurricular content management information system using the Waterfall software development methodology. The research covers requirements analysis, system design, implementation, testing, and maintenance processes to improve content organization, publication efficiency, and communication within extracurricular activities.",
   },
 ];
 
