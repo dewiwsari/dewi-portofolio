@@ -26,6 +26,7 @@ import mct2 from "../../assets/works/mct2.jpeg";
 import assist from "../../assets/works/assist.png";
 import assist1 from "../../assets/works/assist1.jpg";
 import myskill from "../../assets/certificates/MySkill.png";
+import viskom from "../../assets/projects/cover-viskom.png";
 
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -82,7 +83,7 @@ const PROJECTS: CardItem[] = [
       "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=640&h=400&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&h=400&fit=crop&auto=format",
     ],
-    links: { github: "https://github.com/dewiwsari/FE-Jurnalistik.git", demo: "#" },
+    links: { github: "https://github.com/dewiwsari/FE-Jurnalistik.git", demo: "https://jurnalsmandas.web.id/" },
     overview: "Full-featured CMS for managing school extracurricular activities — member registrations, event scheduling, reporting, and role-based access control.",
     responsibilities: [
       "React + TypeScript frontend with responsive design",
@@ -118,8 +119,7 @@ const PROJECTS: CardItem[] = [
     period: "2026",
     tags: ["Flutter", "Dart", "Figma", "ML"],
     images: [
-      "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?w=640&h=400&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=640&h=400&fit=crop&auto=format",
+      viskom,
     ],
     links: { github: "#", demo: "#" },
     overview: "Intelligent food recommendation app using hybrid ML (collaborative + content-based filtering) to suggest personalized meal plans based on nutritional goals and allergies.",
