@@ -27,6 +27,11 @@ import assist from "../../assets/works/assist.png";
 import assist1 from "../../assets/works/assist1.jpg";
 import myskill from "../../assets/certificates/MySkill.png";
 import viskom from "../../assets/projects/cover-viskom.png";
+import ukom from "../../assets/projects/cover-ukom.png";
+import cms from "../../assets/projects/cms.png";
+import gofood from "../../assets/projects/gofood.png";
+import kmeans from "../../assets/projects/k-means.png";
+import rf from "../../assets/projects/rf.png";
 
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -56,7 +61,7 @@ const PROJECTS: CardItem[] = [
     subtitle: "Poultry Farm Management System",
     role: "UI/UX Designer & Mobile Developer",
     period: "2024",
-    tags: ["Java", "XML", "Android Studio", "Figma"],
+    tags: ["Mobile", "Website", "Java", "XML", "Android Studio", "Figma"],
     images: [
       "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=640&h=400&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?w=640&h=400&fit=crop&auto=format",
@@ -78,10 +83,9 @@ const PROJECTS: CardItem[] = [
     subtitle: "Content Management System - Website Based",
     role: "UI/UX Designer & Frontend Developer",
     period: "2026",
-    tags: ["Blade", "PHP", "Laravel", "MySQL"],
+    tags: ["Website", "Blade", "PHP", "Laravel", "MySQL"],
     images: [
-      "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=640&h=400&fit=crop&auto=format",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&h=400&fit=crop&auto=format",
+      cms,
     ],
     links: { github: "https://github.com/dewiwsari/FE-Jurnalistik.git", demo: "https://jurnalsmandas.web.id/" },
     overview: "Full-featured CMS for managing school extracurricular activities — member registrations, event scheduling, reporting, and role-based access control.",
@@ -99,7 +103,7 @@ const PROJECTS: CardItem[] = [
     subtitle: "E-Commerce Mobile App",
     role: "UI/UX Designer",
     period: "2024",
-    tags: ["Figma"],
+    tags: ["Design", "Figma"],
     images: [
       "https://images.unsplash.com/photo-1628277613967-6abca504d0ac?w=640&h=400&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=640&h=400&fit=crop&auto=format",
@@ -117,7 +121,7 @@ const PROJECTS: CardItem[] = [
     subtitle: "ML-Powered Nutrition Mobile App",
     role: "UI/UX Designer & Flutter Developer",
     period: "2026",
-    tags: ["Flutter", "Dart", "Figma", "ML"],
+    tags: ["Mobile", "Gemini AI",  "Flutter", "Dart", "Figma", "ML"],
     images: [
       viskom,
     ],
@@ -131,6 +135,78 @@ const PROJECTS: CardItem[] = [
     ],
     technologies: ["Flutter", "Dart", "Figma", "Scikit-learn", "Pandas", "PostgreSQL"],
     achievements: ["95% recommendation accuracy on test set", "Sub-200ms API response time"],
+  },
+  {
+    id: "big-data",
+    title: "GoFood Product Batch Analytics",
+    subtitle: "Big Data Processing with PySpark & Spark SQL",
+    role: "Data Analyst & Pipeline Engineer",
+    period: "2026",
+    tags: ["Data Analytics", "Big Data", "PySpark", "Spark SQL", "Kaggle"],
+    images: [
+      gofood, kmeans, rf,
+    ],
+    links: { github: "#", demo: "#" },
+    overview: "Built a localized Big Data pipeline to ingest, clean, and analyze over 45,000+ commercial food delivery product listings from GoFood across major Indonesian cities using PySpark.",
+    responsibilities: [
+      "Configured a local PySpark Session environment to fetch and ingest raw datasets via the KaggleHub API programmatically.",
+      "Engineered an automated preprocessing routine to resolve multi-line CSV formatting, escape characters, and infer accurate schemas.",
+      "Developed optimized Spark SQL queries to run demographic pricing distributions, categorical trends, and regional operational behavior benchmarks.",
+      "Aggregated commercial markdown trends by calculating platform-wide discount penetration rates using Spark DataFrame actions.",
+    ],
+    technologies: ["PySpark", "Spark SQL", "Python", "Google Colab", "Kaggle API"],
+    achievements: [
+      "Successfully processed 45,000+ data rows with inferred complex nested-string schema definitions.",
+      "Discovered that bakery/snacks lead platform volume, while only 6.06% of merchants actively utilize dynamic price discounts."
+    ],
+  },
+  {
+    id: "otsu-thresholding",
+    title: "Otsu's Thresholding Implementation",
+    subtitle: "Computer Vision & Digital Image Processing",
+    role: "Computer Vision Engineer (Academic)",
+    period: "2025",
+    tags: ["Computer Vision", "Image Segmentation", "OpenCV", "Algorithms", "Python"],
+    images: [
+      
+    ],
+    links: { github: "#", demo: "#" },
+    overview: "Implemented and evaluated Otsu's binarization method from scratch to perform optimal image segmentation, comparing built-in OpenCV functions against a manual 0-255 intensity variance search loop.",
+    responsibilities: [
+      "Developed an image segmentation pipeline to convert standard grayscale inputs into binary format using dynamic histogram thresholding.",
+      "Coded Otsu's mathematical algorithm from scratch using NumPy to evaluate inter-class variance across all 256 pixel intensity levels.",
+      "Analyzed the probability distributions ($w_1$, $w_2$) and class means ($\mu_1$, $\mu_2$) to dynamically locate peak mathematical boundaries.",
+      "Generated performance visualization charts using Matplotlib to map image histograms against the top three highest-variance thresholds.",
+    ],
+    technologies: ["OpenCV", "NumPy", "Matplotlib", "Python", "Colab Google"],
+    achievements: [
+      "Identified the exact optimal mathematical threshold at 124.00 for the standard Lena benchmark image.",
+      "Successfully mapped the highest inter-class variance distribution, validating manual loop arrays against native OpenCV operations."
+    ],
+  },
+  {
+    id: "epl-player-analytics",
+    title: "EPL Goal Scorer Analytics",
+    subtitle: "Descriptive Statistics & Outlier Detection",
+    role: "Data Analyst (Academic)",
+    period: "2025",
+    tags: ["Data Analytics", "Pandas", "NumPy", "Tukey's Fences", "Python"],
+    images: [
+      
+    ],
+    links: { github: "#", demo: "#" },
+    overview: "Performed exploratory data analysis and descriptive statistics on the English Premier League (2020-2021) goal scorers dataset using Pandas and NumPy.",
+    responsibilities: [
+      "Cleaned raw sports datasets by handling arbitrary indices and isolating core performance attributes via Pandas `.iloc` slicing.",
+      "Computed structural metrics including means, medians, standard deviations, and multi-level quantiles for advanced player evaluation.",
+      "Implemented Tukey's Fences mathematical algorithm to detect statistical outliers and filter high-performing assist-makers.",
+      "Aggregated multi-variable data using `.groupby()` to evaluate performance consistency and scoring averages across different football clubs.",
+    ],
+    technologies: ["Python", "Pandas", "NumPy", "Google Colab", "Google Drive API"],
+    achievements: [
+      "Successfully mapped and filtered anomalies across 522 player profiles using automated IQR threshold filters.",
+      "Delivered tabular aggregation models measuring standard deviation shifts in team scoring behavior."
+    ],
   },
 ];
 
@@ -984,7 +1060,20 @@ export function ShowcaseSection() {
           style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" } as React.CSSProperties}
         >
           <AnimatePresence mode="popLayout">
-            {currentTab.data.map((item, i) => (
+            {[...currentTab.data]
+              .sort((a, b) => {
+                const getYear = (period?: string) => {
+                  if (!period) return 0;
+
+                  const matches = period.match(/\d{4}/g);
+                  if (!matches) return 0;
+
+                  return Math.max(...matches.map(Number));
+                };
+
+                return getYear(b.period) - getYear(a.period);
+              })
+              .map((item, i) => (
               <motion.div
                 key={`${activeTab}-${item.id}`}
                 initial={{ opacity: 0, x: 24 }}
