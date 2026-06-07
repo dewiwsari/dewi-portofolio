@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Github, Download, ArrowRight, Sparkles, Mail } from "lucide-react";
 import { Eye } from "lucide-react";
+import foto from "../../assets/profile/foto.png";
 
 
 const STATS = [
@@ -222,7 +223,7 @@ export function HeroSection() {
                 style={{ aspectRatio: "4/5", boxShadow: "0 24px 80px rgba(15,23,42,0.14),0 4px 12px rgba(15,23,42,0.08)" }}
               >
                 <img
-                  src="/src/assets/profile/foto.png"
+                  src={foto}
                   alt="Dewi Wulansari"
                   className="w-full h-full object-cover"
                 />
