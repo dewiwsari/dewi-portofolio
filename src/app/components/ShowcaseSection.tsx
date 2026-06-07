@@ -146,7 +146,7 @@ const PROJECTS: CardItem[] = [
     images: [
       gofood, kmeans, rf,
     ],
-    links: { github: "#", demo: "#" },
+    links: { demo: "#" },
     overview: "Built a localized Big Data pipeline to ingest, clean, and analyze over 45,000+ commercial food delivery product listings from GoFood across major Indonesian cities using PySpark.",
     responsibilities: [
       "Configured a local PySpark Session environment to fetch and ingest raw datasets via the KaggleHub API programmatically.",
@@ -170,7 +170,7 @@ const PROJECTS: CardItem[] = [
     images: [
       
     ],
-    links: { github: "#", demo: "#" },
+    links: { demo: "#" },
     overview: "Implemented and evaluated Otsu's binarization method from scratch to perform optimal image segmentation, comparing built-in OpenCV functions against a manual 0-255 intensity variance search loop.",
     responsibilities: [
       "Developed an image segmentation pipeline to convert standard grayscale inputs into binary format using dynamic histogram thresholding.",
@@ -194,7 +194,7 @@ const PROJECTS: CardItem[] = [
     images: [
       
     ],
-    links: { github: "#", demo: "#" },
+    links: { demo: "#" },
     overview: "Performed exploratory data analysis and descriptive statistics on the English Premier League (2020-2021) goal scorers dataset using Pandas and NumPy.",
     responsibilities: [
       "Cleaned raw sports datasets by handling arbitrary indices and isolating core performance attributes via Pandas `.iloc` slicing.",
@@ -206,6 +206,30 @@ const PROJECTS: CardItem[] = [
     achievements: [
       "Successfully mapped and filtered anomalies across 522 player profiles using automated IQR threshold filters.",
       "Delivered tabular aggregation models measuring standard deviation shifts in team scoring behavior."
+    ],
+  },
+  {
+    id: "ecommerce",
+    title: "E-Commerce Recommendation Engine",
+    subtitle: "Supervised Learning & Customer Feedback Classification",
+    role: "Data Scientist / ML Engineer (Academic)",
+    period: "2026",
+    tags: ["Data Scientist", "Machine Learning", "Scikit-Learn", "Classification", "Feature Engineering", "Python"],
+    images: [
+      ukom,
+    ],
+    links: { demo: "https://drive.google.com/drive/folders/1bQxWFONAmB1NwnPqE4y7NTDf2sVixNxJ?usp=sharing" },
+    overview: "Built an end-to-end predictive classification pipeline adhering to national data science standards to determine e-commerce product recommendation indices based on structured customer demographics and review behaviors.",
+    responsibilities: [
+      "Programmed a programmatic dataset intake pipeline using the KaggleHub API to fetch over 22,000 commercial fashion review entries.",
+      "Engineered tabular preprocessing steps to handle sparse structures and filter out null text values across multi-variable classes.",
+      "Conducted feature construction by tokenizing string properties into mathematical length markers and mapping categorical ordinal ranks.",
+      "Trained and cross-evaluated Logistic Regression and Random Forest models using an 80:20 operational train-test partition strategy.",
+    ],
+    technologies: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Google Colab", "Kaggle API"],
+    achievements: [
+      "Achieved a peak test accuracy of 93.2% utilizing the baseline Logistic Regression model for production telemetry.",
+      "Successfully delivered a validation matrix optimizing high precision metrics (0.98) on recommended classes."
     ],
   },
 ];
