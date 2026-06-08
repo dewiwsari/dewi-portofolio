@@ -15,7 +15,7 @@ export function Footer() {
           </span>
         </div>
         <p className="text-xs text-[#94A3B8]" style={{ fontFamily: "'JetBrains Mono',monospace" }}>
-          © {year} · Dewi's Portofolio
+          © {year} · Dewi's Portfolio
         </p>
       </div>
     </footer>

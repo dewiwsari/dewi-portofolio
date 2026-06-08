@@ -1,25 +1,26 @@
 import { motion } from "motion/react";
 import { GraduationCap, MapPin, Zap, Heart } from "lucide-react";
+import header from "../../assets/profile/header.png";
 
 const STRENGTHS = [
   {
     icon: <GraduationCap size={17} />,
     title: "Academic Foundation",
-    desc: "Software Engineering Technology at IPB University — blending CS theory with practical engineering discipline.",
+    desc: "Software Engineering Technology Student — Learning core computer science and software lifecycles at IPB University.",
   },
   {
     icon: <Zap size={17} />,
-    title: "Cross-Stack Fluency",
-    desc: "Fluent from Flutter UIs to Spring Boot microservices to Python data pipelines — full-spectrum engineering.",
+    title: "Frontend & UI Development",
+    desc: "Frontend Exploration — Practicing responsive web design slicing (Figma to code) using HTML/CSS.",
   },
   {
     icon: <Heart size={17} />,
-    title: "Design-Conscious Dev",
-    desc: "Uses Figma to prototype first, then ships pixel-perfect, accessible, delightful interfaces every time.",
+    title: "Intelligent System Integration",
+    desc: "Adaptive AI Integration — Exploring machine learning models to build smart application features",
   },
   {
     icon: <MapPin size={17} />,
-    title: "Community Driven",
+    title: "Community & Leadership",
     desc: "Teaches coding to rural youth, mentors juniors, and leads tech orgs — engineering beyond the screen.",
   },
 ];
@@ -113,7 +114,7 @@ export function AboutSection() {
             {/* Banner image */}
             <div className="rounded-2xl overflow-hidden h-44 relative">
               <img
-                src="https://images.unsplash.com/photo-1580894908361-967195033215?w=900&h=300&fit=crop&auto=format"
+                src={header}
                 alt="Workspace"
                 className="w-full h-full object-cover"
               />
@@ -126,7 +127,7 @@ export function AboutSection() {
                   className="text-white text-lg font-semibold tracking-tight text-center px-4"
                   style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 800, textShadow: "0 2px 12px rgba(0,0,0,0.3)" }}
                 >
-                  Engineering with Purpose
+                  Software Engineering
                 </p>
               </div>
             </div>

@@ -142,7 +142,7 @@ export function HeroSection() {
                 <ArrowRight size={14} />
               </a>
               <a
-                href="https://drive.google.com/file/d/1hc1IY8YQyrFJFReONDGVjuacCxAYn_7V/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/12npo0S39xhLenloLAEgZC9HaUXyniLtW?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white border border-[#E2E8F0] text-[#0F172A] text-sm font-semibold hover:border-[#E96D9E]/40 hover:bg-[#E96D9E]/5 hover:scale-[1.02] active:scale-[0.98] transition-all duration-150"
