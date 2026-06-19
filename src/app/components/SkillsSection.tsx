@@ -32,14 +32,13 @@ const SKILL_GROUPS: { category: string; skills: Skill[] }[] = [
   {
     category: "Tools & DevOps",
     skills: [
-      { name: "Git", icon: "https://cdn.simpleicons.org/git/F05032" },
       { name: "GitHub", icon: "https://cdn.simpleicons.org/github/181717" },
       { name: "Figma", icon: "https://cdn.simpleicons.org/figma/F24E1E" },
       { name: "Postman", icon: "https://cdn.simpleicons.org/postman/FF6C37" },  
       { name: "VS Code", icon: "https://cdn.simpleicons.org/visualstudiocode/007ACC" },
       { name: "Android Studio", icon: "https://cdn.simpleicons.org/androidstudio/3DDC84" },
       { name: "Anaconda", icon: "https://cdn.simpleicons.org/anaconda/44A833" },
-      { name: "R Studio", icon: "https://cdn.simpleicons.org/r/276DC3" },
+      { name: "R", icon: "https://cdn.simpleicons.org/r/276DC3" },
       { name: "Unity", icon: "https://cdn.simpleicons.org/unity/000000" },
     ],
   },
