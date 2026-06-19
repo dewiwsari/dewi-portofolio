@@ -43,7 +43,7 @@ export function Navbar() {
               className="hidden sm:block text-[#0F172A] font-semibold text-sm tracking-tight"
               style={{ fontFamily: "'Plus Jakarta Sans',sans-serif" }}
             >
-              Dewi's Portfolio
+              Dewi Wulansari
             </span>
           </a>
 
