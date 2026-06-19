@@ -7,14 +7,10 @@ const SKILL_GROUPS: { category: string; skills: Skill[] }[] = [
     category: "Programming Languages",
     skills: [
       { name: "Java", icon: "https://cdn.simpleicons.org/openjdk/EA2D2E" },
-      { name: "Kotlin", icon: "https://cdn.simpleicons.org/kotlin/7F52FF" },
       { name: "Python", icon: "https://cdn.simpleicons.org/python/3776AB" },
       { name: "PHP", icon: "https://cdn.simpleicons.org/php/8892BF" },
-      { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript/F7DF1E" },
-      { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript/3178C6" },
       { name: "Dart", icon: "https://cdn.simpleicons.org/dart/0175C2" },
       { name: "SQL", icon: "https://cdn.simpleicons.org/sqlite/003B57" },
-      { name: "C++", icon: "https://cdn.simpleicons.org/cplusplus/00599C" },
     ],
   },
   {
@@ -23,7 +19,6 @@ const SKILL_GROUPS: { category: string; skills: Skill[] }[] = [
       { name: "Laravel", icon: "https://cdn.simpleicons.org/laravel/FF2D20" },
       { name: "React", icon: "https://cdn.simpleicons.org/react/61DAFB" },
       { name: "Flutter", icon: "https://cdn.simpleicons.org/flutter/02569B" },
-      { name: "Android", icon: "https://cdn.simpleicons.org/android/3DDC84" },
     ],
   },
   {
