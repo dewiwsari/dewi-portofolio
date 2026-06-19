@@ -479,15 +479,15 @@ const PUBLICATIONS: CardItem[] = [
 const CERTIFICATES: CardItem[] = [
   {
     id: "figma",
-    title: "Associate Android Developer",
-    subtitle: "Google Developers Certification",
-    period: "2024",
-    tags: ["Android", "Google", "Kotlin"],
+    title: "Figma UI/UX Design Certificate",
+    subtitle: "MySkill Certification",
+    period: "2025",
+    tags: ["Figma", "UI/UX Design", "MySkill", "Design Thinking"],
     images: [
       myskill,
     ],
     links: { view: "https://app.notion.com/p/Dewi-Wulansari-J0403231024-13b64c0f2a2380bcb22dde1bdc9495fa?source=copy_link" },
-    overview: "Official Google certification validating proficiency in Android development with Kotlin.",
+    overview: "Official MySkill certification validating proficiency in Figma UI/UX design.",
   },
 ];
 
